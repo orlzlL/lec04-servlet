@@ -24,6 +24,7 @@ public class RedirectServlet extends HttpServlet {
 
         String firstName = "";
         String lastName = "";
+        
         for(Cookie cookie: cookies){
             System.out.println(cookie.getName() + ": " + cookie.getValue());
 
