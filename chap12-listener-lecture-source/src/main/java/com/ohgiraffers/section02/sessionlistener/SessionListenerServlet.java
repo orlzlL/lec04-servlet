@@ -22,6 +22,12 @@ public class SessionListenerServlet extends HttpServlet {
         session.setAttribute("gender", "M");
 
         session.setAttribute("userName", "hong");
+        session.setAttribute("user", new UserDTO("honggildong", 20));
+
+        session.removeAttribute("user");
+
+        session.invalidate();
+
 
     }
 }
